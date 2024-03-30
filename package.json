@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "lucky-oshi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm:dev:game\"",
+    "dev:game": "nodemon ./src/index.js -w assets -w src -e json,js"
+  },
+  "keywords": [],
+  "author": "@cj_clippy",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "croner": "^8.0.1",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "ramda": "^0.29.1",
+    "tmi.js": "^1.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
